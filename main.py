@@ -3,7 +3,9 @@ import pyspark.sql
 
 ##create spark session
 spark = (
-    pyspark.sql.SparkSession.builder.appName("Python Spark SQL basic example")
+    pyspark.sql.SparkSession.builder.appName(
+        "Data Transformation using Python Spark SQL"
+    )
     .config(
         "spark.driver.extraClassPath",
         "/SparkFolder/postgresql-42.2.18.jar",
